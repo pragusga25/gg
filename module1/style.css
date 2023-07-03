@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type='submit'][disabled='disabled'] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode input[type='submit'] {
+  background-color: #8b0000;
+}
+
+.dark-mode .error {
+  color: #ff0000;
+}
+
+.valid {
+  color: #4cff50;
+}
+
+.invalid {
+  color: #ff0000;
+}

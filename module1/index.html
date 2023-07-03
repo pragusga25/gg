@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Login Form</h1>
+      <form id="loginForm" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <span id="emailError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <span id="length-validation" class="invalid"
+            >Password must be at least 6 characters long</span
+          >
+          <br />
+          <span id="uppercase-validation" class="invalid"
+            >Password must contain a capital letter</span
+          >
+          <br />
+          <span id="lowercase-validation" class="invalid"
+            >Password must contain a lowercase letter</span
+          >
+          <br />
+          <span id="number-validation" class="invalid"
+            >Password must contain a number</span
+          >
+          <br />
+          <span id="special-validation" class="invalid"
+            >Password must contain a special character (!@#$%^&*)</span
+          >
+          <br />
+        </div>
+
+        <input type="submit" value="Login" id="submit" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
